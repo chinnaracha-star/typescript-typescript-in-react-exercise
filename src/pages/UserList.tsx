@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 
 // TODO2: กำหนด Type สำหรับ user
+type User = {
+  id: number;
+  name: string;
+};
 
 const UsersList = () => {
-  const users = [
-    { id: 1, name: "Alice" },
+  const users: User[] = [
+    { id: 1, name: "Chin" },
     { id: 2, name: "Bob" },
     { id: 3, name: "Charlie" },
   ];
